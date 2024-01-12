@@ -1,148 +1,216 @@
 *,
 *::after,
-*::before{
-    /* margin:0; */
-    padding:0;
-} 
- html,body{
-    overflow-x: hidden;
+*::before {
+  /* margin:0; */
+  padding: 0;
+}
+html,
+body {
+  overflow-x: hidden;
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 nav {
-    width: 58%; 
-    /* background-color: ; */
-    /* height: 50px; */
-    /* margin-top: 30px; */
-    /* margin-left: 200px; */
-    /* padding-right:0px; */
-    display: flex;
-    align-items: center;
-    justify-content: end;
+  width: 58%;
+  /* background-color: ; */
+  /* height: 50px; */
+  /* margin-top: 30px; */
+  /* margin-left: 200px; */
+  /* padding-right:0px; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .hamburger {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: end; 
-    cursor: pointer;
-    width: 35px;
-    height: 25px;
-  }
-   .hamburger span {
-    position: absolute;
-    display: block;
-    background-color: black;
-    width: 35px;
-    height: 4px;
-    -ms-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg); 
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-  } 
-  .hamburger span:nth-child(1) {
-    top: 0px;
-  }
-  .hamburger span:nth-child(2) {
-    top: 10px;
-  }
-  .hamburger span:nth-child(3) {
-    top: 20px;
-  }
-  
-  .hamburger.active span:nth-child(1) {
-    top: 10px;
-    -ms-transform: rotate(50deg);
-    -webkit-transform: rotate(50deg); 
-    transform: rotate(50deg);
-  } */
-  
-   .hamburger.active span:nth-child(2) {
-    display: none;
-  }
-  
-  .hamburger.active span:nth-child(3) {
-    top: 10px;
-    -ms-transform: rotate(-50deg);
-    -webkit-transform: rotate(-50deg); 
-    transform: rotate(-50deg);
-  }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  cursor: pointer;
+  width: 35px;
+  height: 25px;
+}
+.hamburger span {
+  position: absolute;
+  display: block;
+  background-color: black;
+  width: 35px;
+  height: 4px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+.hamburger span:nth-child(2) {
+  top: 10px;
+}
+.hamburger span:nth-child(3) {
+  top: 20px;
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 10px;
+  -ms-transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+}
+*/ .hamburger.active span:nth-child(2) {
+  display: none;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: 10px;
+  -ms-transform: rotate(-50deg);
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+}
 .bkg {
-    background: url(/images/Mask-Group-231.jpg);
-    width: 60%;
-    height: 190px;
-    padding: 100px;
-    margin-top: 80px;
-    margin-left: 170px;
-    justify-content: center;
-    align-content: center;
-    display: grid;
-    grid-template-columns: auto ;
-    
+  background: url(/images/Mask-Group-231.jpg);
+  width: 60%;
+  height: 190px;
+  padding: 100px;
+  margin-top: 80px;
+  margin-left: 170px;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: auto;
 }
 .blue-txt {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .arrow {
-    border: Solid black;
-    border-width: 0 10px 10px 0;
-    display: inline-block;
-    padding: 3px;
+  border: Solid black;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 3px;
 }
 .slide {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
 }
-
 
 .big-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.sec-conyainer {
+  display: flex;
+  max-width: 1080px;
+  margin-left: 170px;
+  /* background-color: grey; */
+  justify-content: center;
+  /* gap: 5px; */
+}
+.p-container {
+  display: flex;
+  /* justify-content: center; */
+  width: 400px;
+  padding: 50px;
+}
+.i-container {
+  display: flex;
+  /* justify-content: center; */
+  width: 560px;
+  padding: 50px;
+}
+.arrows {
+  height: 35px;
+  /* padding: 5px; */
+}
+.third-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.forth-container {
+  display: flex;
+  justify-content: center;
+}
+.f-container {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  gap: 10px;
+  
+}
+h5 {
+  color: white;
+  display: flex;
+  
+  justify-items: center;
+}
+.d-container {
+  width: 140px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  /* gap: 5px; */
+  background-color: #244ac2;
+}
+.b-container {
+  width: 290px;
+  height: 120px;
+  background-color: #061c2c;
+}
+
+.inline-i {
+  margin-right: 300px;
+}
+
+.h-text {
+  color: white;
+  padding: 16px;
 }
 .container {
-    display: flex;
-    width: 700px;
-
+  display: flex;
+  width: 700px;
 }
 .containers {
-    display: flex;
-    width: 500px;
-    
+  display: flex;
+  width: 500px;
+}
+.inline-p {
+  display: inline;
 }
 .inline {
-    display: inline-block;
-    background-color: blue;
-    width: 600px;
-    gap: 50px;
+  display: inline-block;
+  background-color: #244ac2;
+  width: 600px;
+  gap: 50px;
 }
 
 .block {
-    display: inline-block;
-    background-color: black;
-    width: 900px;
-    gap: 1000px; 
-    z-index: -1;
+  display: inline-block;
+  background-color: black;
+  width: 900px;
+  gap: 1000px;
+  z-index: -1;
 }
 
 /* .black {
     background-color: black;
     width: 150px;
     height: 70px; */
-    /* margin-left: 120px; */
-    /* z-index: -1;
+/* margin-left: 120px; */
+/* z-index: -1;
 }
 .blue {
     background-color: blue;
